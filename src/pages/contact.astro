@@ -1,0 +1,19 @@
+---
+import { EMAIL, SITE_TITLE } from "../consts";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title={`contact | ${SITE_TITLE}`}
+  description=""
+  className="flex h-svh max-w-sm flex-col justify-center"
+>
+  <main class="space-y-6">
+    <p class="text-zinc-600 dark:text-zinc-400">
+      Want to get in touch? Send me an email.
+    </p>
+    <p>
+      <span id="email" class="select-all">{EMAIL}</span>
+    </p>
+  </main>
+</Layout>

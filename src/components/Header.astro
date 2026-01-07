@@ -1,0 +1,19 @@
+---
+import { EMAIL } from "../consts";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<header class="mb-6 flex items-center justify-between" transition:name="header">
+  <nav class="flex items-center gap-4">
+    <a href="/"> about </a>
+    <a href="/posts"> posts </a>
+    <a href="/contact">contact</a>
+  </nav>
+  <ThemeToggle />
+</header>
+
+<style>
+  a {
+    @apply font-medium text-zinc-500 hover:text-purple-500 dark:hover:text-purple-400;
+  }
+</style>
